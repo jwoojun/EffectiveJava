@@ -1,4 +1,4 @@
-package com.example.effectivejava.chapter2.item16;
+package com.example.effectivejava.chapter02.item16;
 
 public class Point {
     public double x;

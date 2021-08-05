@@ -1,4 +1,4 @@
-package com.example.effectivejava.chapter2.item17;
+package com.example.effectivejava.chapter02.item17;
 
 public class ComplexStatic {
       private final double re;

@@ -1,4 +1,4 @@
-package com.example.effectivejava.chapter2.item12;
+package com.example.effectivejava.chapter02.item12;
 
 
 import lombok.Getter;

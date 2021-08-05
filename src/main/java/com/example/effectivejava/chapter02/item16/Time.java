@@ -1,4 +1,4 @@
-package com.example.effectivejava.chapter2.item16;
+package com.example.effectivejava.chapter02.item16;
 
 public final class Time {
       private static final int HOURS_PER_DAY = 24;
