@@ -32,11 +32,13 @@ public class AttackVulnerable extends Vulnerable {
         // vm이 gc를 실행하고 모든 finalizer를 실행하도록 권장
         System.gc();
         System.runFinalization();
-        if (vulnerable != null) {
-            System.out.println("Vulnerable object " + vulnerable + " created!");
+    if (vulnerable != null) {
+      System.out.println("Vulnerable object " + vulnerable + " created!");
         }
+    }
 
-
+    public void test33(){
+    System.out.println("sadfasdf");
     }
 }
 
@@ -85,4 +87,10 @@ class Outter{
         Outter.this.value = 3;
         Outter.this.test();
       }
+
+
+}
+
+class Children{
+
 }

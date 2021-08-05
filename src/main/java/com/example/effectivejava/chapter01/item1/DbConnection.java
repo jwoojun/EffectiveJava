@@ -1,4 +1,4 @@
-package com.example.effectivejava.chapter01.item2;
+package com.example.effectivejava.chapter01.item1;
 
 import java.util.HashSet;
 import java.util.Set;

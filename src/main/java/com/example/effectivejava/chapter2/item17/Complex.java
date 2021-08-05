@@ -1,5 +1,6 @@
-package com.example.effectivejava.chapter01.item17;
+package com.example.effectivejava.chapter2.item17;
 
+import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Complex {
@@ -62,6 +63,13 @@ public class Complex {
         System.out.println("=======================");
         System.out.println(Complex.ZERO);
         System.out.println("=======================");
-      }
+        BigDecimal bigDecimal = new BigDecimal("300000");
+        bigDecimal.add(BigDecimal.valueOf(30000));
+        System.out.println(bigDecimal);
 
+
+
+      }
 }
+
+

@@ -1,4 +1,4 @@
-package com.example.effectivejava.chapter01.item12;
+package com.example.effectivejava.chapter2.item12;
 
 
 import lombok.Getter;
@@ -6,8 +6,7 @@ import lombok.ToString;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.time.LocalDateTime;
-import java.util.Collections;
+import java.math.BigDecimal;
 
 //@Getter
 public class ToStringParent {
@@ -33,6 +32,7 @@ public class ToStringParent {
     public String getLineNum() {
         return lineNum;
     }
+
     /**
        * 해당 문자열은 "XXX-YYY-ZZZZ" 형태의 12글자로 구성된다.
        * XXX는 지역코드, YYY는 프리픽스, ZZZZ는 가입자 번호이며
@@ -45,17 +45,18 @@ public class ToStringParent {
 //      @Override
 //      public String toString() {
 //        return String.format("%03d-%03d-%04d", areaCode, prefix, lineNum);
+//
 //      }
 
 
-//      @Override
-//      public String toString() {
-//            return "ToStringExample{" +
-//                    "areaCode='" + areaCode + '\'' +
-//                    ", prefix='" + prefix + '\'' +
-//                    ", lineNum='" + lineNum + '\'' +
-//                    '}';
-//      }
+      @Override
+      public String toString() {
+            return "ToStringExample{" +
+                    "areaCode='" + areaCode + '\'' +
+                    ", prefix='" + prefix + '\'' +
+                    ", lineNum='" + lineNum + '\'' +
+                    '}';
+      }
 
 }
 
@@ -69,11 +70,10 @@ class ToStringChild extends ToStringParent {
         this.country = country;
       }
 
-
-//      @Override
-//      public String toString() {
-//        return "ToStringChild{" + "country='" + country + '\'' + '}';
-//      }
+     // @Override
+     // public String toString() {
+     //   return "ToStringChild{" + "country='" + country + '\'' + '}';
+     // }
 
       @Override
       public String toString() {
@@ -90,6 +90,12 @@ class ToStringChild extends ToStringParent {
 
         ToStringChild child = new ToStringChild("123", "456", "7890", "Korea");
         System.out.println(child.toString());
+
+
+        BigDecimal bigDecimal = new BigDecimal("30033333333033324234829103481333333");
+        System.out.println(bigDecimal.toPlainString());
+        System.out.println(bigDecimal.toPlainString().getClass());
+
       }
 
 }
