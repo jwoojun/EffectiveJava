@@ -1,9 +1,8 @@
 package com.example.effectivejava.chapter01.item2;
 
-import java.time.LocalDate;
 import java.util.*;
 
-public class Naver extends PayTypeService{
+public class Naver {
 
     protected Naver createInstance(){
         Naver naver = new Naver();

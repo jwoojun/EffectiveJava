@@ -1,4 +1,12 @@
 package com.example.effectivejava.chapter02.item16;
+import static com.example.effectivejava.chapter04.item22.PhysicalConstants.*;
+
+class Test{
+    double atoms(double mols){
+        return AVOGADROS_NUMBER*mols;
+    }
+}
+
 
 public final class Time {
       private static final int HOURS_PER_DAY = 24;
