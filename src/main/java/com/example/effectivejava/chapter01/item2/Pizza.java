@@ -1,8 +1,13 @@
 package com.example.effectivejava.chapter01.item2;
 
+import java.io.IOException;
+import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Stream;
+
+
 
 public abstract class Pizza {
     public enum Topping {HAM, MUSHROOM, ONION, PEPPER, SAUSAGE}
@@ -26,6 +31,13 @@ public abstract class Pizza {
 
     Pizza(Builder<?> builder) {
       toppings = builder.toppings.clone();
+    }
+    public static void main(String args []){
+        String a = "123";
+        int k = 123;
+        int [] kk = new int[k];
+
+
     }
 }
 
