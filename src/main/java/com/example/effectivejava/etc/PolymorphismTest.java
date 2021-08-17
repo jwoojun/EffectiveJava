@@ -1,4 +1,4 @@
-package com.example.effectivejava;
+package com.example.effectivejava.etc;
 
 public class PolymorphismTest {
   public static void main(String[] args) {
