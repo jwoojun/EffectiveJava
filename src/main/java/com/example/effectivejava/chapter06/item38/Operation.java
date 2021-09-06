@@ -2,8 +2,7 @@ package com.example.effectivejava.chapter06.item38;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.nio.file.LinkOption;
-import java.util.Arrays;
+import java.util.stream.Stream;
 
 public interface Operation {
     BigDecimal apply(BigDecimal x, BigDecimal y);
@@ -72,6 +71,8 @@ enum ExtendedOperation implements Operation {
         this.symbol = symbol;
     }
 
+
+
     @Override
     public String toString() {
         return symbol;
@@ -80,10 +81,19 @@ enum ExtendedOperation implements Operation {
     static String[] args = {"3", "5"};
 
     public static void main(String[] args) {
-        String [] arguments = {"3", "5"};
-        BigDecimal x = BigDecimal.valueOf(Double.parseDouble(arguments[0]));
-        BigDecimal y = BigDecimal.valueOf(Double.parseDouble(arguments[1]));
-        test(ExtendedOperation.class, x, y);
+        Stream.of("A", "B", "C")
+                .filter(x->{
+                    return x.equals("A");
+                })
+                .map(x->{
+                    String y = x+"BB";
+                    return y;
+                })
+                .forEach(System.out::println);
+//        String [] arguments = {"3", "5"};
+//        BigDecimal x = BigDecimal.valueOf(Double.parseDouble(arguments[0]));
+//        BigDecimal y = BigDecimal.valueOf(Double.parseDouble(arguments[1]));
+//        test(ExtendedOperation.class, x, y);
     }
 
     private static <T extends Enum<T> & Operation> void test(
