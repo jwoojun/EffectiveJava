@@ -4,7 +4,7 @@ MongoDB 학습 저장소. 간단한 게시판을 만들면서 MongoDB의 기능�
 
 <br/>
 
-![image](https://user-images.githubusercontent.com/110341502/211813863-bade70f4-9fa3-4c55-bd26-c213389577d9.png)
+![image](https://user-images.githubusercontent.com/92818747/218259026-26ac8b7e-ae17-49b6-9b3a-a99d63984598.png)
 
 <div align="center">
 
